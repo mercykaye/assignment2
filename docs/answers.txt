@@ -1,0 +1,48 @@
+// Git Lab Tutorials done 10.12.22
+// GitHub account made around Sept. 2022
+
+1. PS C:\Users\merce\Documents\CEN 4020\assignment2> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\merce\Documents\CEN 4020\assignment2> 
+
+2. 3 commits - git log
+
+3. Date:   Wed Oct 12 20:08:05 2022 -0400   - git log README.md
+
+4. Two reasons to use branches are to split up the different sections of code
+    to make it easier to follow/work on and it allows a person to work out problems
+    until the best solution is found without making changes to main that may
+    have to be undone later
+
+5. git log shows a snapshot of committed items while git status shows you 
+    the working directory and any staged changes/ whether your remote and repository
+    are up-to-date
+
+6. git log Vehicle.h
+
+7. git log --grep="file"
+
+8. a) Inheritance is one class being able to "inherit" the methods and variables of another
+    b) polymorphism is the ability of some object to take on many forms
+    c) encapsulation is making information private or "hiding" it from outside classes
+        so it can't be modified accidentally
+
+9. The main difference is that the Integration Manager workflow has the developers
+    using two repositories per developer before going to a review stage then to the main repository
+    while the Director-Lieutenant Workflow each developer has one respository that pushes to a Lieutenant (first review)
+    then the Lieutenant pushes fixes/changes to a Director(second review) and then it's push to main.
+    Essentially, there are 3 sets of eyes on the code in Director-Lieutenant but only 2 in Integration Manager
+
+10. They would benefit from the specifically laid out organization style. Centralized Workflow has each developer
+    pulling from and pushing to the main repository. This can cause confusion, overlapping work, syntax issues, etc.
+    as you get into larger teams. The Director-Lieutenant Workflow has a pipeline instead where each developer
+    has their own repository that then has to go to a Lieutenant(who will have multiple developers under them) 
+    to review and make changes/integrate each developers code. This would significantly narrow down the amount of 
+    code each person has to look at which is then sent to a Director(who each Lieutenant is under) to make final
+    revisions/integrations before pushing the entire code to the main repository. 
+    Essentially, this workflow streamlines the coding process so there won't end up a jumbled mess in the main
+    repository that every developer would have to search through to find issues making 100 developers working in a team
+    much more efficient. 
